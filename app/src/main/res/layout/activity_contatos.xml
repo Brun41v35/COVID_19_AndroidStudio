@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/first"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.ContatosActivity">
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="608dp"
+        android:src="@drawable/i3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="396dp"
+        android:src="@drawable/i1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="396dp"
+        android:src="@drawable/i2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ue"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="work.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/teste"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_fileName="home.json" />
+
+    <Button
+        android:id="@+id/btn_app_SUS"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/desingbuttoncontatos"
+        android:onClick="irParaWebSUS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn_app_Eisnten"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/desingbuttoncontatos"
+        android:onClick="irParaWebEisten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/desingbuttoncontatos"
+        android:onClick="irParaWebSULA"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contato com a area da Saúde"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ue"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:layout_width="134dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="SUS"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_app_SUS" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="134dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="240dp"
+        android:text="Meu Einstein"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_app_SUS" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="134dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="32dp"
+        android:text="SulAmerica"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_app_SUS" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

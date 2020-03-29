@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contracorona">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginUsuarioActivity"></activity>
+        <activity android:name=".BancoDeDados.LoginActivity" />
+        <activity android:name=".BancoDeDados.UsuarioActivity" />
+        <activity android:name=".Tutorial.IntroActivity" />
+        <activity android:name=".WebView.WepAppEistenActivity" />
+        <activity android:name=".WebView.WebAppSU" />
+        <activity android:name=".WebView.WebAppSUSActivity" />
+        <activity android:name=".Menu.ContatosActivity" />
+        <activity android:name=".WebView.WebPrevencaoActivity" />
+        <activity android:name=".Menu.PrevencaoActivity" />
+        <activity android:name=".WebView.WebSintomasActivity" />
+        <activity android:name=".WebView.WebCoronaActivity" />
+        <activity android:name=".Menu.SintomasActivity" />
+        <activity android:name=".Menu.CoronaActivity" />
+        <activity
+            android:name=".Menu.MenuActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".SplashScreen.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
